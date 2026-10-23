@@ -2,7 +2,9 @@ import axios from "axios";
 
 
 
-const baseURL = `${import.meta.env.VITE_API_HOST}${import.meta.env.VITE_API_BASE_URL}`;
+const apiHost = import.meta.env.VITE_API_HOST ?? "https://ucs503p-202526odd-group6.onrender.com";
+const apiBase = import.meta.env.VITE_API_BASE_URL ?? "/api";
+const baseURL = `${apiHost}${apiBase}`;
 
 
 
